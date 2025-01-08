@@ -34,6 +34,16 @@ namespace SignNewsLetter
 
             return View(subscribe);
         }
+        public async Task<IActionResult> Unsubscribe(Guid? id)
+        {
+            if(id==null)
+                return NotFound();
+            var subscribe = await _context.Subscribes.FindAsync(id)
+            _context.Remove(book)
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(index));
+            
+        }
 
     }
 
