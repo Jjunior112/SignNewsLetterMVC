@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace NomeDoProjeto.Data
+namespace SignNewsLetter.Data
 {
     public class ApplicationDbContext : DbContext
     {

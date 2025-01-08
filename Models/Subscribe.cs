@@ -13,6 +13,8 @@ public class Subscribe
     [DisplayName("Email")]
     public string Email { get; set; } = "";
 
+    [Required(ErrorMessage = "Campo obrigatório")]
+    [DisplayName("Inscrito desde:")]
     public DateTime SubscribesSince { get; set; } = DateTime.UtcNow;
     
     public bool IsActive { get; set; } = true;

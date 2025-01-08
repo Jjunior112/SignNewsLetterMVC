@@ -1,0 +1,20 @@
+﻿@model Subscribe
+
+@{
+    ViewData["Title"] = "Unsubscribe";
+}
+
+
+<div class="container-fluid bg-middle vh-100 d-flex flex-column justify-content-center align-items-center">
+    <div class="text-center" style="padding: 14em;margin:0 auto;">
+
+        <div style="display: flex; justify-content: center;flex-direction: column;align-items: center;">
+
+            <h1 class="display-4 mb-4">Inscrição concluída com sucesso! </h1>
+            <p class="lead mb-4">Você ficará por dentro das nossas últimas atualizações, novidades e os melhores conteúdos diretamente no seu e-mail.</p>
+            
+            <a href="@Url.Action("Index", "Home")" class="btn btn-secondary btn-lg">Página inicial </a>
+
+           
+        </div>
+    </div>

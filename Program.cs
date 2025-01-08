@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using NomeDoProjeto.Data;
+using SignNewsLetter.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
