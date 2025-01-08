@@ -38,8 +38,11 @@ namespace SignNewsLetter
         {
             if(id==null)
                 return NotFound();
+                
             var subscribe = await _context.Subscribes.FindAsync(id)
-            _context.Remove(book)
+            
+            subscribe.IsActive = false;
+            
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(index));
             
