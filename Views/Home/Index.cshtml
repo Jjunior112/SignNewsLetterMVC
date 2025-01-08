@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Página Inicial";
+}
+
+
+<div class="container-fluid bg-middle vh-100 d-flex flex-column justify-content-center align-items-center">
+    <div class="text-center" style="padding: 14em;margin:0 auto;">
+
+        <div style="display: flex; justify-content: center;flex-direction: column;align-items: center;">
+            
+            <h1 class="display-4 mb-4">Bem-vindo à nossa Newsletter!</h1>
+            <p class="lead mb-4">Fique por dentro das nossas últimas atualizações e novidades. Inscreva-se agora para
+                receber os melhores conteúdos diretamente no seu e-mail.</p>
+
+            <a href="@Url.Action("Index", "SignNewsLetter")" class="btn btn-secondary btn-lg">Inscrever-se agora</a>
+        </div>
+    </div>

@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Newsletter";
+}
+<div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+    <img src="https://storage.needpix.com/rsynced_images/newsletter-2123477_1280.jpg"
+        alt="Imagem representando uma newsletter" style="height: 15em; width: 18em;">
+    <div class="container mt-5">
+        <h2 class="text-center mb-3">Bem-vindo à nossa Newsletter!</h2>
+
+        <form asp-action="Subscribe" method="post" class="bg-dark p-4 rounded shadow-sm">
+            <div class="form-group mb-3">
+                <label for="Name" class="form-label">Nome</label>
+                <input type="text" id="Name" name="Name" class="form-control" required placeholder="Digite seu nome">
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="Email" class="form-label">Email</label>
+                <input type="email" id="Email" name="Email" class="form-control" required
+                    placeholder="Digite seu email">
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Inscrever-se</button>
+            </div>
+        </form>
+    </div>
+</div>
