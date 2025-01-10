@@ -115,8 +115,7 @@ namespace SignNewsLetter
                 using (var smtpClient = new SmtpClient(smtpHost, smtpPort))
                 {
                     smtpClient.Credentials = new NetworkCredential(smtpEmail, smtpPassword);
-                    smtpClient.EnableSsl = true; // Certifique-se de que SSL/TLS esteja ativado
-
+                    smtpClient.EnableSsl = true; 
                     var mailMessage = new MailMessage
                     {
                         From = new MailAddress(smtpEmail),
