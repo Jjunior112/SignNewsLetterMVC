@@ -1,7 +1,14 @@
+using DotNetEnv;
 using Microsoft.EntityFrameworkCore;
 using SignNewsLetter.Data;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+//Carregar credenciais do .env
+
+Env.Load();
+
 
 // Configurar o DbContext para usar SQLite
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
